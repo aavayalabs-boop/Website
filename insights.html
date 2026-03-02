@@ -4,54 +4,67 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aavaya Insights</title>
-
-<link rel="icon" type="image/png" href="images/favicon.png">
-<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 
-<body class="light">
+<body class="dark">
 
-<!-- Navigation -->
-<nav>
-    <div class="logo">
-        <img src="images/logo.png" alt="Aavaya Insights">
-    </div>
+<nav id="navbar">
+    <div class="logo"><img src="logo.png" alt="Aavaya Insights"></div>
     <ul>
         <li><a href="index.html">Aavaya Labs</a></li>
-        <li><a href="insights.html">Insights</a></li>
+        <li><a href="#ai">AI</a></li>
+        <li><a href="#finance">Finance</a></li>
+        <li><a href="#tech">Tech</a></li>
     </ul>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero light-hero">
-    <div>
-        <h1>Understanding Tomorrow’s Technology Today.</h1>
-        <p>Independent insights on AI, Finance, and Emerging Technology.</p>
+<section id="hero" class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content container padded-container">
+        <h1>Deep Insights on AI, Finance & Emerging Technology</h1>
+        <p>Explore our expert analysis and articles in each domain.</p>
     </div>
 </section>
 
-<!-- Insights Articles Section -->
-<section class="grid content-grid">
-    <div class="card light-card article-card">
-        <h3>AI in Business Automation</h3>
-        <p>How intelligent systems redefine scale.</p>
-    </div>
-    <div class="card light-card article-card">
-        <h3>Fintech Evolution</h3>
-        <p>Modern finance powered by AI.</p>
-    </div>
-    <div class="card light-card article-card">
-        <h3>Modern Web Architecture</h3>
-        <p>Scalable systems for startups.</p>
+<section id="ai" class="insight-section ai">
+    <div class="container padded-container">
+        <h2>Artificial Intelligence</h2>
+        <div class="grid">
+            <div class="card article-card ai glassmorphic hover-particles"><h3>AI in Business Automation</h3><p>Intelligent systems redefining efficiency.</p></div>
+            <div class="card article-card ai glassmorphic hover-particles"><h3>AI Ethics & Governance</h3><p>Responsible AI deployment in enterprises.</p></div>
+        </div>
     </div>
 </section>
 
-<!-- Footer -->
+<section id="finance" class="insight-section finance">
+    <div class="container padded-container">
+        <h2>Finance & Fintech</h2>
+        <div class="grid">
+            <div class="card article-card finance glassmorphic hover-particles"><h3>Digital Banking Trends</h3><p>Modern finance solutions powered by technology.</p></div>
+            <div class="card article-card finance glassmorphic hover-particles"><h3>Fintech Innovation</h3><p>Emerging fintech platforms in 2026.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="tech" class="insight-section tech">
+    <div class="container padded-container">
+        <h2>Emerging Technology</h2>
+        <div class="grid">
+            <div class="card article-card tech glassmorphic hover-particles"><h3>Scalable Web Architectures</h3><p>High-performance platforms for startups.</p></div>
+            <div class="card article-card tech glassmorphic hover-particles"><h3>Future of Cloud Systems</h3><p>How cloud tech is shaping enterprises.</p></div>
+        </div>
+    </div>
+</section>
+
 <footer>
-© 2026 Aavaya Insights — A Publication by Aavaya Labs.
+    <img src="logo.png" class="footer-logo" alt="Aavaya Insights">
+    <p>© 2026 Aavaya Insights — A Publication by Aavaya Labs.</p>
 </footer>
 
-<!-- Script -->
-<script src="js/insights.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
