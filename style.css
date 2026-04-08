@@ -39,6 +39,30 @@ a{text-decoration:none;color:inherit;}
 .btn-outline{padding:14px 35px;border-radius:30px;border:2px solid var(--primary);color:var(--primary);cursor:pointer;transition:all 0.3s;}
 .glow-btn:hover{box-shadow:0 0 20px var(--primary),0 0 40px var(--secondary);transform:scale(1.05);}
 
+if(projectForm){
+projectForm.addEventListener("submit", async function(e){
+e.preventDefault();
+
+const data = new FormData(projectForm);
+
+const res = await fetch(projectForm.action, {
+method: "POST",
+body: data,
+headers: { 'Accept': 'application/json' }
+});
+
+if(res.ok){
+document.getElementById("form-success").style.display = "block";
+projectForm.reset();
+}
+});
+}select{
+padding:12px;
+border-radius:8px;
+border:none;
+width:100%;
+margin-bottom:15px;
+}
 /* Ripple effect */
 .ripple{position:relative;overflow:hidden;}
 .ripple:after{content:"";position:absolute;width:100px;height:100px;background:rgba(255,255,255,0.3);display:block;transform:scale(0);opacity:0;border-radius:50%;pointer-events:none;}
@@ -87,3 +111,5 @@ footer p{color:var(--muted);font-size:0.9rem;}
 @media(max-width:1024px){.hero h1{font-size:2.5rem;}.hero p{font-size:1.1rem;}}
 @media(max-width:768px){.hero h1{font-size:2rem;}.hero p{font-size:1rem;}.grid{gap:20px;}}
 @media(max-width:480px){.hero h1{font-size:1.6rem;}.hero p{font-size:0.9rem;}}
+const projectForm = document.getElementById("project-form");
+
