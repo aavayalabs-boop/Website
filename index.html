@@ -3,157 +3,182 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Aavaya Labs</title>
+
 <link rel="icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="dark">
 
+<!-- NAV -->
 <nav id="navbar">
     <div class="logo"><img src="logo1.png" alt="Aavaya"></div>
+
     <ul>
         <li><a href="#hero">Home</a></li>
-        <li><a href="#services">Services</a></li>
         <li><a href="insights.html">Insights</a></li>
         <li><a href="workwithus.html">Work With Us</a></li>
-        <li><a href="#contact">Contact</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="privacy.html">Privacy</a></li>
-
     </ul>
 </nav>
 
+<!-- HERO (REAL LANDING PAGE FOCUS) -->
 <section id="hero" class="hero">
-    <canvas id="hero-canvas"></canvas>
-    <div class="hero-content container padded-container">
-        <h1>Innovating the Future of AI & Technology</h1>
-        <p>We build scalable digital systems and publish deep insights on AI, Finance, and Technology.</p>
-        <div class="hero-buttons">
-            <a href="insights.html"><button class="btn-outline ripple">Explore Insights</button></a>
-        </div>
-    </div>
-</section>
 
-<section id="services" class="services">
-    <div class="container padded-container">
-        <h2>Our Expertise</h2>
-        <div class="grid">
-            <div class="card service-card glassmorphic hover-particles">
-                <i class="fas fa-code fa-2x"></i>
-                <h3>Web Development</h3>
-                <p>High-performance web apps with scalable architecture.</p>
-            </div>
-            <div class="card service-card glassmorphic hover-particles">
-                <i class="fas fa-search fa-2x"></i>
-                <h3>SEO & Strategy</h3>
-                <p>Optimizing your digital presence for growth.</p>
-            </div>
-            <div class="card service-card glassmorphic hover-particles">
-                <i class="fas fa-pencil-ruler fa-2x"></i>
-                <h3>UI/UX Design</h3>
-                <p>Engaging designs that improve user experience.</p>
-            </div>
-            <div class="card service-card glassmorphic hover-particles">
-                <i class="fas fa-cogs fa-2x"></i>
-                <h3>Custom Applications</h3>
-                <p>Tailor-made solutions for complex business needs.</p>
-            </div>
-        </div>
-    </div>
-</section>
+<div class="bg-shapes">
+    <span></span><span></span><span></span><span></span><span></span>
+</div>
 
-<section class="preview">
-    <div class="container padded-container">
-        <h2>From Aavaya Insights</h2>
-        <div class="grid">
-            <div class="card article-card ai glassmorphic hover-particles">
-                <h3>AI in Industry</h3>
-                <p>How AI is transforming global businesses.</p>
-            </div>
-            <div class="card article-card finance glassmorphic hover-particles">
-                <h3>Digital Finance 2026</h3>
-                <p>Modern fintech systems and innovations.</p>
-            </div>
-            <div class="card article-card tech glassmorphic hover-particles">
-                <h3>Scalable Web Systems</h3>
-                <p>Architecture for high-growth platforms.</p>
-            </div>
-        </div>
-        <div class="btn-container">
-            <a href="insights.html"><button class="btn-primary glow-btn ripple">Explore All Articles</button></a>
-        </div>
-    </div>
-</section>
+<canvas id="hero-canvas"></canvas>
 
+<div class="hero-center">
 
-<section class="cta">
-    <div class="container padded-container">
-        <h2>Ready to Innovate?</h2>
+    <div class="hero-badge">AI • FINANCE • ENGINEERING</div>
+
+    <h1>Build Scalable AI Systems That Power the Future</h1>
+
+    <p>
+        Aavaya Labs designs high-performance digital systems, AI solutions,
+        and modern web architecture for scalable growth.
+    </p>
+
+    <div class="hero-actions">
         <a href="workwithus.html">
             <button class="btn-primary">Start Your Project</button>
         </a>
+
+        <a href="insights.html">
+            <button class="btn-outline">Explore Insights</button>
+        </a>
     </div>
+
+</div>
+
 </section>
 
-<section id="contact" class="contact">
-    <div class="container padded-container">
-        <h2>Contact Us</h2>
+<!-- TRUST LINE (IMPORTANT LANDING ELEMENT) -->
+<div class="trust-bar">
+    Trusted in AI research • Scalable systems • Modern engineering
+</div>
 
-        <div id="form-success" style="display:none; margin-bottom:15px; color:#4ade80;">
-            ✅ Message sent successfully!
-        </div>
+<!-- SERVICES -->
+<section class="section">
+<div class="container">
 
-        <div id="form-error" style="display:none; margin-bottom:15px; color:#f87171;">
-            ❌ Something went wrong. Try again.
-        </div>
+<h2>What We Do</h2>
 
-        <form id="contact-form" action="https://formspree.io/f/xdapjydw" method="POST">
+<div class="grid">
 
-            <input 
-                type="text" 
-                name="name" 
-                placeholder="Your Name" 
-                required
-            >
+<div class="card">
+<i class="fas fa-code"></i>
+<h3>Engineering</h3>
+<p>Scalable backend systems & high-performance web applications.</p>
+</div>
 
-            <input 
-                type="email" 
-                name="email" 
-                placeholder="Your Email" 
-                required
-            >
+<div class="card">
+<i class="fas fa-brain"></i>
+<h3>AI Systems</h3>
+<p>Machine learning workflows and intelligent automation tools.</p>
+</div>
 
-            <textarea 
-                name="message" 
-                placeholder="Your Message" 
-                required
-            ></textarea>
+<div class="card">
+<i class="fas fa-chart-line"></i>
+<h3>Strategy</h3>
+<p>Data-driven growth strategies for digital products.</p>
+</div>
 
-            <!-- Optional: redirect after submit -->
-            <input type="hidden" name="_subject" value="New Message from Aavaya Website">
+<div class="card">
+<i class="fas fa-layer-group"></i>
+<h3>Design</h3>
+<p>Modern UI/UX systems built for conversion and clarity.</p>
+</div>
 
-            <button type="submit" class="btn-primary glow-btn ripple">
-                Send Message
-            </button>
+</div>
 
-        </form>
-
-        <p style="margin-top:20px; opacity:0.7;">
-            Or email directly: aavayalabs@gmail.com
-        </p>
-    </div>
+</div>
 </section>
 
+<!-- INSIGHTS -->
+<section class="section alt">
+<div class="container">
+
+<h2>Latest Insights</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>AI in Industry</h3>
+<p>How artificial intelligence is reshaping global businesses.</p>
+</div>
+
+<div class="card">
+<h3>Digital Finance</h3>
+<p>Next generation fintech systems and infrastructure.</p>
+</div>
+
+<div class="card">
+<h3>Scalable Architecture</h3>
+<p>How modern systems handle millions of users.</p>
+</div>
+
+</div>
+<br>
+<div class="center">
+<a href="insights.html">
+<button class="btn-primary">Explore All Articles</button>
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- CTA (REAL DECISION SECTION) -->
+<section class="cta">
+<div class="container">
+
+<h2>Have an Idea Worth Building?</h2>
+
+<p>
+We help startups and companies turn ideas into scalable digital products.
+</p>
+<br>
+<a href="workwithus.html">
+<button class="btn-primary large">Start Building Now</button>
+</a>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+<div class="container">
+
+<h2 style="text-align: center;">Contact</h2>
+
+<form id="contact-form" action="https://formspree.io/f/xdapjydw" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit" class="btn-primary">Send Message</button>
+
+</form>
+<br>
+<p style="text-align: center;" class="email-note">Or email: aavayalabs@gmail.com</p>
+
+</div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <img src="logo.png" class="footer-logo">
-    <p>© 2026 Aavaya Labs. All rights reserved.</p>
-    <div style="margin-top:10px;">
-        <a href="about.html">About</a> |
-        <a href="privacy.html">Privacy Policy</a>
-    </div>
+<p>© 2026 Aavaya Labs</p>
 </footer>
 
 <script src="script.js"></script>
