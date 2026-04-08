@@ -119,12 +119,49 @@
 <section id="contact" class="contact">
     <div class="container padded-container">
         <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn-primary glow-btn ripple">Send Message</button>
+
+        <div id="form-success" style="display:none; margin-bottom:15px; color:#4ade80;">
+            ✅ Message sent successfully!
+        </div>
+
+        <div id="form-error" style="display:none; margin-bottom:15px; color:#f87171;">
+            ❌ Something went wrong. Try again.
+        </div>
+
+        <form id="contact-form" action="https://formspree.io/f/xdapjydw" method="POST">
+
+            <input 
+                type="text" 
+                name="name" 
+                placeholder="Your Name" 
+                required
+            >
+
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Your Email" 
+                required
+            >
+
+            <textarea 
+                name="message" 
+                placeholder="Your Message" 
+                required
+            ></textarea>
+
+            <!-- Optional: redirect after submit -->
+            <input type="hidden" name="_subject" value="New Message from Aavaya Website">
+
+            <button type="submit" class="btn-primary glow-btn ripple">
+                Send Message
+            </button>
+
         </form>
+
+        <p style="margin-top:20px; opacity:0.7;">
+            Or email directly: contact@aavaya.org
+        </p>
     </div>
 </section>
 
